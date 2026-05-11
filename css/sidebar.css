@@ -1,0 +1,89 @@
+.sidebar {
+    border-right: 1px solid #d6cfc6;
+    background-color: #ede8e1;
+    align-self: stretch;
+}
+
+.sidebar > * + * {
+    border-top: 1px solid #d6cfc6;
+    padding: 0.1rem 2rem;
+}
+
+.sidebar-logo {
+    text-transform: uppercase;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.25rem;
+    padding: 0.1rem 1.5rem;
+}
+
+.sidebar-cat__header {
+    margin: 0 -2rem; /* match whatever your padding is */
+    padding: 0 2rem; /* add it back so the text stays in place */
+    border-bottom: 1px solid #d6cfc6;
+}
+
+.sidebar-divider {
+    margin: 0 -2rem;
+    border-top: 1px solid #d6cfc6;
+}
+
+.sidebar-cat__lead {
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    color: #9a9288;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.sidebar-cat__arrow {
+    margin-left: auto; 
+    font-size: 0.5rem; 
+    color: #b8b0a6; 
+    padding: 0.75rem 0 0.5rem;
+}
+
+.sidebar-cat__card {
+    margin-bottom: 0rem;
+}
+
+.sidebar-cat__card[data-open="false"] .sidebar-cat__arrow {
+    transform: none;
+}
+
+.sidebar-cat__card[data-open="true"] .sidebar-cat__arrow {
+    transform: rotate(90deg);
+}
+
+.sidebar-cat__card[data-open="true"] .sidebar-tag__list,
+.sidebar-cat__card[data-open="true"] .sidebar-divider {
+    display: flex;
+}
+
+.sidebar-cat__card[data-open="false"] .sidebar-tag__list,
+.sidebar-cat__card[data-open="false"] .sidebar-divider {
+    display: none;
+}
+
+.sidebar-cat__header:hover .sidebar-cat__lead,
+.sidebar-cat__header:hover .sidebar-cat__arrow,
+.sidebar-cat__header {
+    color: #b01e24;
+    cursor: pointer;
+}
+
+.sidebar-tag__list {
+    font-family: 'DM Mono', monospace;
+    color: #9a9288; 
+    font-size: 0.75rem;
+    padding: 0 0.5rem;
+    cursor: pointer;
+    gap: .25rem;
+    margin-top: 0.3rem;
+    display: flex;
+}
+
+.sidebar-tag__item:hover {
+    color: #b01e24;
+}

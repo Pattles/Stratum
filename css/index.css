@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400&family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap');
+
+/* font-family: 'Bebas Neue', sans-serif;  - logo */
+/* font-family: 'DM Sans', sans-serif;     - UI text */
+/* font-family: 'DM Mono', monospace;      - data/tags */
+
+body, html {
+    padding: 0;
+    margin: 0;
+    background: #e8e3dc;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-family: 'DM Sans', sans-serif;   
+}
+
+.accent {
+    color: #b01e24;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+/*
+Backgrounds
+- Page bg: #e8e3dc
+- Sidebar + topbar: #ede8e1
+- Song cards: #f0ebe4
+- Search input: #f5f2ee
+
+Borders
+- Primary borders: #d6cfc6
+- Secondary borders: #ddd8d0
+- Subtle borders: #ccc5bb
+
+Text
+- Primary (titles): #2a2420
+- Secondary (artists, categories): #9a9288
+- Muted (numbers, years): #c4bdb5
+- Tags: #a09890
+
+Accent
+- Red (everything active): #b01e24
+*/
