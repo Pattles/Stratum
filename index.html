@@ -4,63 +4,88 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/sidebar.css">
     <script src="scripts/cat.js"></script>
+    <script src="scripts/tags.js"></script>
 </head>
 <body>
-    <img src="Screenshot 2026-05-10 at 8.23.45 PM.png" alt="" style="width: 30rem;">
-
+    <img src="Screenshot 2026-05-10 at 8.23.45 PM.png" alt="" style="width: 25rem">
     <div class="container">
         <div class="sidebar">
             <div> 
                 <h1 class="sidebar-logo accent">Stratum</h1>
             </div>
             <div class="sidebar-cat">
+                <!-- Genres -->
                 <div class="sidebar-cat__card column" data-open="true">
                     <div class="row sidebar-cat__header">
                         <h3 class="sidebar-cat__lead">Genre</h3>
                         <span class="sidebar-cat__arrow">▶</span>
                     </div>
-                    <ul class="sidebar-tag__list column">
-                        <li>melodic house</li>
-                        <li>techno</li>
-                        <li>ambient</li>
-                    </ul>
+                    
+                    <div class="sidebar-tags__list column">
+                        <div class="sidebar-tag" data-open="false"">
+                            <div class="sidebar-tags__header">
+                                <span class="sidebar-tags__arrow">▶</span>
+                                <span>rock</span>
+                            </div>
+                            <ul class="sidebar-subtag__list">
+                                <li class="sidebar-subtag">dad rock</li>
+                                <li class="sidebar-subtag">classic rock</li>
+                                <li class="sidebar-subtag">shoegaze</li>
+                            </ul>
+                        </div>
+
+                        <div class="sidebar-tag" data-open="true">
+                            <div class="sidebar-tags__header">
+                                <span class="sidebar-tags__arrow">▶</span>
+                                <span>electronic</span>
+                            </div>
+                            <ul class="sidebar-subtag__list">
+                                <li class="sidebar-subtag">techno</li>
+                                <li class="sidebar-subtag">drum & bass</li>
+                                <li class="sidebar-subtag">deep house</li>
+                                <li class="sidebar-subtag">melodic house</li>
+                            </ul>
+                        </div>
+                    </div>   
                 </div>
-                <div class="sidebar-cat__card column" data-open="true">
-                    <div class="row sidebar-cat__header">
-                        <h3 class="sidebar-cat__lead">Era</h3>
-                        <span class="sidebar-cat__arrow">▶</span>
-                    </div>
-                    <ul class="sidebar-tag__list column">
-                        <li>2000s</li>
-                        <li>2010s</li>
-                        <li>2020s</li>
-                    </ul>
-                </div>
+
+                <!-- Language -->
                 <div class="sidebar-cat__card column" data-open="false">
-                    <div class="row sidebar-cat__header">
+                    <div class="sidebar-cat__header row">
                         <h3 class="sidebar-cat__lead">Language</h3>
                         <span class="sidebar-cat__arrow">▶</span>
                     </div>
-                    <ul class="sidebar-tag__list column">
+                    <ul class="sidebar-tags__ul column">
                         <li>English</li>
                         <li>Spanish</li>
                         <li>Russian</li>
                     </ul>
-                </div>
+                </div>   
 
-                <div class="sidebar-cat__card column" data-open="true">
-                    <div class="row sidebar-cat__header">
-                        <h3 class="sidebar-cat__lead">Title</h3>
+                <!-- Era -->
+                <div class="sidebar-cat__card column" data-open="false">
+                    <div class="sidebar-cat__header row">
+                        <h3 class="sidebar-cat__lead">Era</h3>
                         <span class="sidebar-cat__arrow">▶</span>
                     </div>
-                    <ul class="sidebar-tag__list column">
-                        <li>rock
-                            <ul>
-                                <li>classic rock</li>
-                            </ul>
-                        </li>
-                        <li>item 2</li>
-                        <li>item 3</li>
+                    <ul class="sidebar-tags__ul column">
+                        <li>2000s</li>
+                        <li>2010s</li>
+                        <li>2020s</li>
+                    </ul>
+                </div>   
+
+                <!-- Mood -->
+                <div class="sidebar-cat__card column" data-open="false">
+                    <div class="sidebar-cat__header row">
+                        <h3 class="sidebar-cat__lead">Mood</h3>
+                        <span class="sidebar-cat__arrow">▶</span>
+                    </div>
+                    <ul class="sidebar-tags__ul column">
+                        <li>Dark</li>
+                        <li>Uplifting</li>
+                        <li>Meloncholic</li>
+                        <li>Hype</li>
                     </ul>
                 </div>
             </div>

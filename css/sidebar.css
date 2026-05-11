@@ -38,9 +38,9 @@
 }
 
 .sidebar-cat__arrow {
-    margin-left: auto; 
     font-size: 0.5rem; 
     color: #b8b0a6; 
+    margin-left: auto; 
     padding: 0.75rem 0 0.5rem;
 }
 
@@ -48,42 +48,65 @@
     margin-bottom: 0rem;
 }
 
-.sidebar-cat__card[data-open="false"] .sidebar-cat__arrow {
+.sidebar-cat__card[data-open="false"] .sidebar-cat__arrow,
+.sidebar-tag[data-open="false"] .sidebar-tags__arrow {
     transform: none;
 }
 
-.sidebar-cat__card[data-open="true"] .sidebar-cat__arrow {
+.sidebar-cat__card[data-open="true"] .sidebar-cat__arrow,
+.sidebar-tag[data-open="true"] .sidebar-tags__arrow {
     transform: rotate(90deg);
 }
 
-.sidebar-cat__card[data-open="true"] .sidebar-tag__list,
-.sidebar-cat__card[data-open="true"] .sidebar-divider {
+.sidebar-cat__card[data-open="true"] .sidebar-tags__list,
+.sidebar-cat__card[data-open="true"] .sidebar-divider,
+.sidebar-cat__card[data-open="true"] .sidebar-tags__ul {
     display: flex;
 }
 
-.sidebar-cat__card[data-open="false"] .sidebar-tag__list,
-.sidebar-cat__card[data-open="false"] .sidebar-divider {
+.sidebar-cat__card[data-open="false"] .sidebar-tags__list,
+.sidebar-cat__card[data-open="false"] .sidebar-divider,
+.sidebar-cat__card[data-open="false"] .sidebar-tags__ul {
+    display: none;
+}
+
+.sidebar-tag[data-open="true"] .sidebar-subtag__list {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-tag[data-open="false"] .sidebar-subtag__list {
     display: none;
 }
 
 .sidebar-cat__header:hover .sidebar-cat__lead,
 .sidebar-cat__header:hover .sidebar-cat__arrow,
-.sidebar-cat__header {
+.sidebar-cat__header,
+.sidebar-tags__ul li:hover,
+.sidebar-tags__header:hover,
+.sidebar-tags__list li:hover,
+.sidebar-subtag:hover {
     color: #b01e24;
     cursor: pointer;
 }
 
-.sidebar-tag__list {
+.sidebar-tags__arrow {
+    display: inline-block
+}
+
+.sidebar-tags__list,
+.sidebar-tags__ul {
     font-family: 'DM Mono', monospace;
     color: #9a9288; 
     font-size: 0.75rem;
     padding: 0 0.5rem;
-    cursor: pointer;
     gap: .25rem;
     margin-top: 0.3rem;
     display: flex;
+    margin-bottom: 0.25rem
 }
 
-.sidebar-tag__item:hover {
-    color: #b01e24;
+.sidebar-subtag__list {
+    margin-left: -1.25rem;
+    margin-top: 0.1rem;
 }
