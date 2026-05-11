@@ -3,8 +3,10 @@
 <head>  
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/topbar.css">
     <script src="scripts/cat.js"></script>
     <script src="scripts/tags.js"></script>
+    <script src="scripts/chip.js"></script>
 </head>
 <body>
     <img src="Screenshot 2026-05-10 at 8.23.45 PM.png" alt="" style="width: 25rem">
@@ -50,15 +52,15 @@
                 </div>
 
                 <!-- Language -->
-                <div class="sidebar-cat__card column" data-open="false">
+                <div class="sidebar-cat__card column" data-open="true">
                     <div class="sidebar-cat__header row">
                         <h3 class="sidebar-cat__lead">Language</h3>
                         <span class="sidebar-cat__arrow">▶</span>
                     </div>
                     <ul class="sidebar-tags__ul column">
-                        <li>English</li>
-                        <li>Spanish</li>
-                        <li>Russian</li>
+                        <li class="sidebar-subtag">english</li>
+                        <li class="sidebar-subtag">spanish</li>
+                        <li class="sidebar-subtag">russian</li>
                     </ul>
                 </div>   
 
@@ -69,9 +71,9 @@
                         <span class="sidebar-cat__arrow">▶</span>
                     </div>
                     <ul class="sidebar-tags__ul column">
-                        <li>2000s</li>
-                        <li>2010s</li>
-                        <li>2020s</li>
+                        <li class="sidebar-subtag">2000s</li>
+                        <li class="sidebar-subtag">2010s</li>
+                        <li class="sidebar-subtag">2020s</li>
                     </ul>
                 </div>   
 
@@ -82,11 +84,27 @@
                         <span class="sidebar-cat__arrow">▶</span>
                     </div>
                     <ul class="sidebar-tags__ul column">
-                        <li>Dark</li>
-                        <li>Uplifting</li>
-                        <li>Meloncholic</li>
-                        <li>Hype</li>
+                        <li class="sidebar-subtag">dark</li>
+                        <li class="sidebar-subtag">uplifting</li>
+                        <li class="sidebar-subtag">meloncholic</li>
+                        <li class="sidebar-subtag">hype</li>
                     </ul>
+                </div>
+            </div>
+        </div>
+        <div class="topbar">
+            <div class="topbar-searchrow row">
+                <input type="text" autocomplete="on" placeholder="search songs, artists, tags..." class="topbar-searchrow__input">
+                <button class="topbar-searchrow__button">Search</button>
+            </div>
+            <div class="topbar-chipsrow row">
+                <div class="topbar-chipsrow__chip">
+                    <span class="topbar-chip__lead">melodic house</span>
+                    <span class="topbar-chip__x">&#215;</span>
+                </div>
+                <div class="topbar-chipsrow__chip">
+                    <span class="topbar-chip__lead">techno</span>
+                    <span class="topbar-chip__x">&#215;</span>
                 </div>
             </div>
         </div>
