@@ -1,10 +1,15 @@
 .topbar {
     background-color: #ede8e1;
-    align-self: stretch;
-    width: 100%;
     border-bottom: 1px solid #d6cfc6;
-    padding: 1.25rem 1.75rem;
+    padding: 1.50rem 1.75rem;
     min-width: 20rem;
+    max-height: 4rem;
+    flex: 1;
+}
+
+.topbar-searchrow {
+    height: 2rem;
+    display: flex;
 }
 
 .topbar-searchrow__input {
@@ -15,8 +20,7 @@
     color: #2a2420;
     padding: 0.25rem 0.75rem;
     height: 1.25rem;
-    max-width: 20rem;
-    flex: 1;
+    min-width: 20rem;
 }
 
 .topbar-searchrow__input:hover {
@@ -49,6 +53,23 @@
     cursor: pointer;
     color: #b01e24;
     box-shadow: inset 0 0 0 2px #b01e24;
+}
+
+.topbar-searchrow__notes {
+    font-family: 'Bebas Neue', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.075rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2rem;
+    padding-left: 1rem;;
+    margin-left: auto;
+}
+
+.topbar-searchrow__notes > * + *::before {
+    content: "•";
+    margin: 0 0.5rem; /* only right margin, no left */
+    color: inherit;
 }
 
 .topbar-chipsrow {

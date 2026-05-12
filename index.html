@@ -4,12 +4,13 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/sidebar.css">
     <link rel="stylesheet" href="css/topbar.css">
+    <link rel="stylesheet" href="css/results.css">
     <script src="scripts/cat.js"></script>
     <script src="scripts/tags.js"></script>
     <script src="scripts/chip.js"></script>
 </head>
 <body>
-    <img src="Screenshot 2026-05-10 at 8.23.45 PM.png" alt="" style="width: 25rem">
+    <!-- <img src="Screenshot 2026-05-10 at 8.23.45 PM.png" alt="" style="width: 25rem"> -->
     <div class="container">
         <div class="sidebar">
             <div> 
@@ -92,21 +93,31 @@
                 </div>
             </div>
         </div>
-        <div class="topbar">
-            <div class="topbar-searchrow row">
-                <input type="text" autocomplete="on" placeholder="search songs, artists, tags..." class="topbar-searchrow__input">
-                <button class="topbar-searchrow__button">Search</button>
-            </div>
-            <div class="topbar-chipsrow row">
-                <div class="topbar-chipsrow__chip">
-                    <span class="topbar-chip__lead">melodic house</span>
-                    <span class="topbar-chip__x">&#215;</span>
+        <div class="container column" style="width: 100%">
+            <div class="topbar">
+                <div class="topbar-searchrow row">
+                    <input type="text" autocomplete="on" placeholder="search songs, artists, tags..." class="topbar-searchrow__input">
+                    <button class="topbar-searchrow__button">Search</button>
+                    <div class="topbar-searchrow__notes accent row">
+                        <p>243 songs catalogued</p>
+                        <p><a href="https://pserikov.com/?ref=stratum">Pserikov.com</a></p>
+                        <p><a href="https://github.com/Pattles/HistoryTimeline">Github</a></p>
+                    </div>
                 </div>
-                <div class="topbar-chipsrow__chip">
-                    <span class="topbar-chip__lead">techno</span>
-                    <span class="topbar-chip__x">&#215;</span>
+                <div class="topbar-chipsrow row">
+                    <div class="topbar-chipsrow__chip">
+                        <span class="topbar-chip__lead">melodic house</span>
+                        <span class="topbar-chip__x">&#215;</span>
+                    </div>
+                    <div class="topbar-chipsrow__chip">
+                        <span class="topbar-chip__lead">techno</span>
+                        <span class="topbar-chip__x">&#215;</span>
+                    </div>
                 </div>
             </div>
+            <div class="results">
+            dddss
+        </div>
         </div>
     </div>
 </body>
