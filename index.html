@@ -8,11 +8,21 @@
     <script src="scripts/cat.js"></script>
     <script src="scripts/tags.js"></script>
     <script src="scripts/chip.js"></script>
+    <script>
+        // Trunacates track titles to prevent leading whitespace before elipses
+        document.addEventListener('DOMContentLoaded', () => {
+            const truncate = (str, max) => str.length > max ? str.slice(0, max).trimEnd() + '...' : str;
+
+            document.querySelectorAll('.results-card__track-title').forEach(title => {
+                title.textContent = truncate(title.textContent, 30);
+            });
+        });
+    </script>
 </head>
 <body>
-    <!-- <img src="Screenshot 2026-05-10 at 8.23.45 PM.png" alt="" style="width: 25rem"> -->
+    <!-- <img src="Screenshot 2026-05-10 at 8.23.45 PM.png" alt="" style="width: 40rem"> -->
     <div class="container">
-        <div class="sidebar">
+        <div class="sidebar column">
             <div> 
                 <h1 class="sidebar-logo accent">Stratum</h1>
             </div>
@@ -20,7 +30,7 @@
                 <!-- Genres -->
                 <div class="sidebar-cat__card column" data-open="true">
                     <div class="row sidebar-cat__header">
-                        <h3 class="sidebar-cat__lead">Genre</h3>
+                        <h2 class="sidebar-cat__lead">Genre</h2>
                         <span class="sidebar-cat__arrow">▶</span>
                     </div>
                     
@@ -92,6 +102,9 @@
                     </ul>
                 </div>
             </div>
+            <div class="sidebar-notes column">
+                <p>Created May 12 2026</p>
+            </div>
         </div>
         <div class="container column" style="width: 100%">
             <div class="topbar">
@@ -116,8 +129,55 @@
                 </div>
             </div>
             <div class="results">
-            dddss
-        </div>
+                <h2 class="results__lead accent">3 songs matching all tags</h2>
+                <div class="results-list column">
+
+                    <div class="results-card row">
+                        <pre class="results-card__place">01</pre>
+                        <div class="results-card__track column">
+                            <p class="results-card__track-title">Strobe</p>
+                            <p class="results-card__track-artist">deadmau5</p>
+                        </div>
+                        <div class="results-card__taglist row">
+                            <p class="results-card__tag" data-selected="true">melodic house</p>
+                            <p class="results-card__tag" data-selected="true">2010s</p>
+                            <p class="results-card__tag" data-selected="false">progressive</p>
+                            <p class="results-card__tag" data-selected="false">english</p>
+                        </div>
+                        <p class="results-card__year">2010</p>
+                    </div>
+
+                    <div class="results-card row">
+                        <pre class="results-card__place">02</pre>
+                        <div class="results-card__track column">
+                            <p class="results-card__track-title">Fly - FKJ Remix</p>
+                            <p class="results-card__track-artist">June Marieezy</p>
+                        </div>
+                        <div class="results-card__taglist row">
+                            <p class="results-card__tag" data-selected="true">neo-soul</p>
+                            <p class="results-card__tag" data-selected="true">2010s</p>
+                            <p class="results-card__tag" data-selected="false">nu-jazz</p>
+                            <p class="results-card__tag" data-selected="false">english</p>
+                        </div>
+                        <p class="results-card__year">2015</p>
+                    </div>
+
+                    <div class="results-card row">
+                        <pre class="results-card__place">03</pre>
+                        <div class="results-card__track column">
+                            <p class="results-card__track-title">Let's Do Something That We've Never Done</p>
+                            <p class="results-card__track-artist">PLGRMS</p>
+                        </div>
+                        <div class="results-card__taglist row">
+                            <p class="results-card__tag" data-selected="true">indie pop</p>
+                            <p class="results-card__tag" data-selected="true">alt-soul</p>
+                            <p class="results-card__tag" data-selected="false">2020s</p>
+                            <p class="results-card__tag" data-selected="false">english</p>
+                        </div>
+                        <p class="results-card__year">2020</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>

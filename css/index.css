@@ -1,50 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400&family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap');
 
-/* font-family: 'Bebas Neue', sans-serif;  - logo */
-/* font-family: 'DM Sans', sans-serif;     - UI text */
-/* font-family: 'DM Mono', monospace;      - data/tags */
-
-body, html {
-    padding: 0;
-    margin: 0;
-    background: #e8e3dc;
-}
-
-p {
-    padding: 0;
-    margin: 0;
-}
-
-a {
-    color: inherit
-}
-
-h1 {
-    font-size: 2.5rem;
-}
-
-h3 {
-    font-family: 'DM Sans', sans-serif;   
-}
-
-.accent {
-    color: #b01e24;
-}
-
-.container {
-    display: flex;
-    min-height: 100vh
-}
-
-.row {
-    display: flex;
-    flex-direction: row;
-}
-
-.column {
-    display: flex;
-    flex-direction: column;
-}
+/* 
+font-family: 'Bebas Neue', sans-serif;  - logo 
+font-family: 'DM Sans', sans-serif;     - UI text
+font-family: 'DM Mono', monospace;      - data/tags
+*/
 
 /*
 Backgrounds
@@ -67,3 +27,43 @@ Text
 Accent
 - Red (everything active): #b01e24
 */
+
+body, html {
+    background: #e8e3dc;
+}
+
+body, html, p, h2, h3 {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: inherit
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h3, h2 {
+    font-family: 'DM Sans', sans-serif;   
+}
+
+.accent {
+    color: #b01e24;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}

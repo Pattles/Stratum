@@ -1,7 +1,9 @@
 .sidebar {
+    display: flex;
     border-right: 1px solid #d6cfc6;
     background-color: #ede8e1;
     align-self: stretch;
+    height: 100vh;
 }
 
 .sidebar > * + * {
@@ -12,15 +14,17 @@
 .sidebar-logo {
     text-transform: uppercase;
     font-family: 'DM Sans', sans-serif;
-    font-weight: 400;
+    font-weight: 450;
     letter-spacing: 0.25rem;
-    padding: 0.1rem 1.5rem;
+    padding: 0.1999rem 1.5rem;
 }
 
 .sidebar-cat__header {
     margin: 0 -2rem; /* match whatever your padding is */
     padding: 0 2rem; /* add it back so the text stays in place */
     border-bottom: 1px solid #d6cfc6;
+    display: flex;
+    align-items: center;
 }
 
 .sidebar-divider {
@@ -103,10 +107,20 @@
     gap: .25rem;
     margin-top: 0.3rem;
     display: flex;
-    margin-bottom: 0.25rem
+    margin-bottom: 0.25rem;
 }
 
 .sidebar-subtag__list {
     margin-left: -1.25rem;
     margin-top: 0.1rem;
+}
+
+.sidebar-notes {
+    border: none;
+    font-family: 'DM Mono', monospace;
+    color: #9a9288; 
+    font-size: 0.75rem;
+    margin-top: auto;
+    padding: 1rem;
+    text-align: center;
 }
