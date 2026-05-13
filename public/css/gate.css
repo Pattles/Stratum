@@ -1,0 +1,103 @@
+.gate {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+.blur {
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.gate-pw {
+    position: relative; /* so gate-toprow positions relative to this */
+    background-color: #e8e3dc;
+    border: 2px solid #ddd8d0;
+    border-radius: 0.5rem;
+    width: 400px; /* use width instead of padding for sizing */
+    overflow: hidden; /* keeps toprow inside the rounded corners */
+}
+
+.gate-toprow {
+    background-color: #b01e24;
+    padding: 1rem 1.5rem;
+}
+
+.gate-toprow__lead {
+    font-family: 'Bebas Neue', sans-serif;
+    color: whitesmoke;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.gate-toprow__x {
+    margin-left: auto;
+    color: whitesmoke;
+    font-weight: 400;
+    font-size: 1.5rem;
+    justify-content: center; 
+}
+
+.gate-toprow__x:hover {
+    cursor: pointer;
+    color: #e8e3dc;
+}
+
+.gate-content {
+    background-color: #e8e3dc;
+    padding: 2rem 1.5rem;
+    gap: 1rem;
+}
+
+.gate-content__pwd {
+    font-family: 'DM Mono', monospace; 
+    color: #9a9288;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+.gate-creds {
+    gap: 0.5rem;
+}
+
+.gate-creds__input {
+    height: 2rem;
+    min-width: 15rem;
+    padding: 0.25rem 0.75rem;
+    align-items: center;
+}
+
+.gate-creds__enter {
+    color: whitesmoke;
+    background: #b01e24;
+    font-family: 'DM Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    padding: 0.25rem 0.75rem;
+    font-weight: 500;
+    height: 2.5rem;
+    border: 2px solid #b01e24;
+    border-radius: 0.25rem;
+    margin-left: auto;
+}
+
+.gate-creds__enter:hover {
+    cursor: pointer;
+    box-shadow: inset 0 0 0 2px #8f181d;
+    border: 2px solid #8f181d;
+    background-color: #8f181d;
+    color: #e8e3dc;
+}
+
+.gate-content__incorrect {
+    font-family: 'DM Sans', sans-serif; 
+    color: #b01e24;
+    letter-spacing: 0.1rem;
+    font-size: 0.8rem;
+}

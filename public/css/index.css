@@ -55,7 +55,6 @@ h3, h2 {
 
 .container {
     display: flex;
-    min-height: 100vh
 }
 
 .row {
@@ -66,4 +65,12 @@ h3, h2 {
 .column {
     display: flex;
     flex-direction: column;
+}
+
+input[type="text"] {
+    font-family: 'DM Mono', monospace;
+    background: whitesmoke;
+    border: 1px solid #ccc5bb;
+    border-radius: 0.25rem;
+    color: #2a2420;
 }

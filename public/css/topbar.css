@@ -14,21 +14,18 @@
 }
 
 .topbar-searchrow__input {
-    font-family: 'DM Mono', monospace;
-    background: whitesmoke;
-    border: 1px solid #ccc5bb;
-    border-radius: 0.25rem;
-    color: #2a2420;
     padding: 0.25rem 0.75rem;
     height: 1.25rem;
     min-width: 20rem;
 }
 
-.topbar-searchrow__input:hover {
+.topbar-searchrow__input:hover,
+.log-gate__input:hover {
     box-shadow: inset 0 0 0 2px #b01e24;
 }
 
-.topbar-searchrow__input:focus {
+.topbar-searchrow__input:focus,
+.log-gate__input:focus {
     outline: none;
     box-shadow: inset 0 0 0 2px #b01e24;
 }
