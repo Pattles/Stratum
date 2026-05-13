@@ -77,6 +77,11 @@
     color: inherit;
 }
 
+.topbar-searchrow__notes-suggest {
+    cursor: pointer; 
+    text-decoration: underline;
+}
+
 .topbar-chipsrow {
     padding-top: 0.5rem;
     gap: 0.25rem;

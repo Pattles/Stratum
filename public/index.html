@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>  
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/sidebar.css">
-    <link rel="stylesheet" href="css/topbar.css">
-    <link rel="stylesheet" href="css/results.css">
-    <script src="scripts/cat.js"></script>
-    <script src="scripts/tags.js"></script>
-    <script src="scripts/chip.js"></script>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/sidebar.css">
+    <link rel="stylesheet" href="/css/topbar.css">
+    <link rel="stylesheet" href="/css/results.css">
+    <script src="/scripts/cat.js"></script>
+    <script src="/scripts/tags.js"></script>
+    <script src="/scripts/chip.js"></script>
+    <script src="/scripts/results.js"></script>
     <script>
         // Trunacates track titles to prevent leading whitespace before elipses
         document.addEventListener('DOMContentLoaded', () => {
@@ -112,6 +113,7 @@
                     <input type="text" autocomplete="on" placeholder="search songs, artists, tags..." class="topbar-searchrow__input">
                     <button class="topbar-searchrow__button">Search</button>
                     <div class="topbar-searchrow__notes accent row">
+                        <p class="topbar-searchrow__notes-suggest">suggest</p>
                         <p>243 songs catalogued</p>
                         <p><a href="https://pserikov.com/?ref=stratum">Pserikov.com</a></p>
                         <p><a href="https://github.com/Pattles/HistoryTimeline">Github</a></p>
@@ -131,9 +133,9 @@
             <div class="results">
                 <h2 class="results__lead accent">3 songs matching all tags</h2>
                 <div class="results-list column">
-
-                    <div class="results-card row">
-                        <pre class="results-card__place">01</pre>
+                     
+                    <!-- <div class="results-card row">
+                        <p class="results-card__place">01</p>
                         <div class="results-card__track column">
                             <p class="results-card__track-title">Strobe</p>
                             <p class="results-card__track-artist">deadmau5</p>
@@ -175,7 +177,7 @@
                             <p class="results-card__tag" data-selected="false">english</p>
                         </div>
                         <p class="results-card__year">2020</p>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
