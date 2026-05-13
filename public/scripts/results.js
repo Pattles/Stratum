@@ -25,10 +25,10 @@ function loadInitCards(songs) {
     `).join('');
 
     const resultsLead = document.querySelector('.results__lead');
+    resultsLead.innerHTML = `${songs.length} songs matching all tags`;
 
-    resultsLead.innerHTML = `
-        ${songs.length} songs matching all tags
-    `
+    const cataloguedLead = document.querySelector('.topbar-searchrow__notes-catalogued');
+    cataloguedLead.innerHTML = `${songs.length} songs catalogued`;
 
     /* 
     const songSchema = new mongoose.Schema({

@@ -79,6 +79,8 @@
     text-decoration: underline;
 }
 
+.topbar-searchrow__notes-catalogued {}
+
 .topbar-chipsrow {
     padding-top: 0.5rem;
     gap: 0.25rem;
