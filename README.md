@@ -20,4 +20,9 @@ Todo:
 - Generate/create pages for each individual song
 - probably something else idk
 
+Later:
+- Populate db with songs (100?)
+- Mobile version
+- Convince victims to populate db for me
+
 *Last updated: May 13 2026*
