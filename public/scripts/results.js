@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     const response = await fetch('/api/songs');
     const songs = await response.json();
     
-
     loadInitCards(songs);
 });
 
