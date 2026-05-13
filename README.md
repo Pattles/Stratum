@@ -13,3 +13,11 @@ In addition, the database (that doesn't exist yet) will be hand-crafted by yours
 Check out my other project, where you can enter any date (e.g. August 24th 1572) across history and explore what happened on that day, [here →](https://history-timeline-qt6j.onrender.com/)
 
 Or check out my other projects [here →](https://www.pserikov.com/portfolio).
+
+Todo:
+- Add support for adding new songs into db
+- Search for songs
+- Generate/create pages for each individual song
+- probably something else idk
+
+*Last updated: May 13 2026*
