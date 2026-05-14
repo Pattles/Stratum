@@ -3,7 +3,7 @@
     border-right: 1px solid #d6cfc6;
     background-color: #ede8e1;
     align-self: stretch;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .sidebar > * + * {
