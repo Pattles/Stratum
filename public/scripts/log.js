@@ -32,6 +32,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 const logFormYear = document.getElementById('log-form__year').value;
                 const logFormTags = document.getElementById('log-form__tags').value.split(', ');
 
+                if ([logFormTitle, logFormArtist, logFormYear, logFormTags].some(val => val.trim() === '')) {
+                    alert("Please fill in all fields!");
+                    return;
+                }
+
                 await addSong(logFormTitle, logFormArtist, logFormYear, logFormTags, enterInput.value);
 
                 log.style.display = 'none';
