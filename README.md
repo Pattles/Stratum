@@ -15,8 +15,10 @@ Check out my other project, where you can enter any date (e.g. August 24th 1572)
 Or check out my other projects [here →](https://www.pserikov.com/portfolio).
 
 Todo:
-- Add support for adding new songs into db
+- ~~Add support for adding new songs into db~~
 - Search for songs
+    - ~~Via sidebar~~
+    - Via search bar
 - Generate/create pages for each individual song
 - probably something else idk
 
@@ -25,4 +27,4 @@ Later:
 - Mobile version
 - Convince victims to populate db for me
 
-*Last updated: May 13 2026*
+*Last updated: May 14 2026*
