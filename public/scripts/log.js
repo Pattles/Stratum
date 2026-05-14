@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const log = document.querySelector('.log');
             log.style.display = 'flex';
 
+            // Logs a song into the db
             const logSubmitBtn = document.querySelector('.log-submit__button-enter');
 
             logSubmitBtn.addEventListener('click', async () => {
@@ -77,24 +78,6 @@ function clearForm() {
     
     return
 }
-
-// Handles submitting a song to db after clicking 'add song' button on overlay
-/*
-document.addEventListener('DOMContentLoaded', () => {
-    const logSubmitBtn = document.querySelector('.log-submit__button-enter');
-
-    logSubmitBtn.addEventListener('click', async () => {
-        const passInput = document.querySelector('.gate-creds__input');
-
-        const logFormTitle = document.getElementById('log-form__title').value;
-        const logFormArtist = document.getElementById('log-form__artist').value;
-        const logFormYear = document.getElementById('log-form__year').value;
-        const logFormTags = document.getElementById('log-form__tags').value.split(', ');
-
-        await addSong(logFormTitle, logFormArtist, logFormYear, logFormTags, passInput);
-    })
-})
-*/
 
 // Adds a Song to db
 async function addSong(title, artist, year, tags, password) {
