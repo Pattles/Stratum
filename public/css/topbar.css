@@ -19,17 +19,6 @@
     min-width: 20rem;
 }
 
-.topbar-searchrow__input:hover,
-.log-gate__input:hover {
-    box-shadow: inset 0 0 0 2px #b01e24;
-}
-
-.topbar-searchrow__input:focus,
-.log-gate__input:focus {
-    outline: none;
-    box-shadow: inset 0 0 0 2px #b01e24;
-}
-
 .topbar-searchrow__input::placeholder {
     color: #b8b0a6; 
     font-family: 'DM Mono', monospace;
@@ -49,7 +38,6 @@
 }
 
 .topbar-searchrow__button:hover {
-    cursor: pointer;
     color: #b01e24;
     box-shadow: inset 0 0 0 2px #b01e24;
 }

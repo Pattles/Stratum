@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="css/sidebar.css">
     <link rel="stylesheet" href="css/topbar.css">
     <link rel="stylesheet" href="css/results.css">
-    <link rel="stylesheet" href="css/gate.css">
+    <link rel="stylesheet" href="css/log.css">
     <script src="scripts/cat.js"></script>
     <script src="scripts/tags.js"></script>
     <script src="scripts/chip.js"></script>
@@ -117,7 +117,7 @@
                     <button class="topbar-searchrow__button">Search</button>
                     <div class="topbar-searchrow__notes accent row">
                         <p class="topbar-searchrow__notes-suggest">Add</p>
-                        <p class="topbar-searchrow__notes-catalogued">243 songs catalogued</p>
+                        <p class="topbar-searchrow__notes-catalogued">0 songs catalogued</p>
                         <p><a href="https://pserikov.com/?ref=stratum">Pserikov.com</a></p>
                         <p><a href="https://github.com/Pattles/HistoryTimeline">Github</a></p>
                     </div>
@@ -134,7 +134,7 @@
                 </div>
             </div>
             <div class="results">
-                <h2 class="results__lead accent">3 songs matching all tags</h2>
+                <h2 class="results__lead accent">0 songs matching all tags</h2>
                 <div class="results-list column">
                      
                     <!-- <div class="results-card row">
@@ -191,13 +191,48 @@
                 <h2 class="gate-toprow__lead">Password required</h2>
                 <span class="gate-toprow__x">&#215;</span>
             </div>
-            <div class="gate-content column">
-                <p class="gate-content__pwd">password</p>
+            <div class="gate-form column">
+                <p class="gate-form__pwd form-lead">password</p>
                 <div class="gate-creds row">
-                    <input class="gate-creds__input" type="text" name="" id="" placeholder="enter password...">
+                    <input class="gate-creds__input form-input" type="text" name="" id="" placeholder="enter password...">
                     <button class="gate-creds__enter">Enter</button>
                 </div>
-                <p class="gate-content__incorrect">&nbsp;</p> <!-- Incorrect password. Try again. -->
+                <p class="gate-form__incorrect">&nbsp;</p> <!-- Incorrect password. Try again. -->
+            </div>
+        </div>
+    </div>
+    <div class="log blur container" style="display: none;">
+        <div class="log-addsong column">
+            <div class="log-toprow row">
+                <h2 class="log-toprow__lead">Add Song</h2>
+                <span class="log-toprow__x">&#215;</span>
+            </div>
+            <div class="log-form column">
+                <div class="log-form__track row">
+                    <div class="log-form__entry column">
+                        <p class="log-form__entry-lead form-lead">Title</p>
+                        <input id="log-form__title" class="log-form__entry-input form-input" type="text" placeholder="e.g. Strobe">
+                    </div>
+                    <div class="log-form__entry column">
+                        <p class="log-form__entry-lead form-lead">Artist</p>
+                        <input id="log-form__artist" class="log-form__entry-input form-input" type="text" placeholder="e.g. deadmau5">
+                    </div>
+                </div>
+                <div class="log-form__entry column">
+                    <p class="log-form__entry-lead form-lead">Year</p>
+                    <input id="log-form__year" class="log-form__entry-input form-input" type="text" placeholder="e.g. 2026">
+                </div>
+                <div class="log-form__entry column">
+                    <p class="log-form__entry-lead form-lead">Tags</p>
+                    <input id="log-form__tags" style="max-width: 20rem;" class="log-form__entry-input form-input" type="text" placeholder="melodic house, hype, 2010s, english">
+                    <p class="log-form__entry-note">comma separated</p>
+                </div>
+            </div>
+            <div class="log-submit column">
+                <div class="log-submit__buttons row">
+                    <button class="log-button log-submit__button-cancel">Cancel</button>
+                    <button class="log-button log-submit__button-enter">Add Song</button>
+                </div>
             </div>
         </div>
     </div>

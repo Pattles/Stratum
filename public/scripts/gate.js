@@ -5,8 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const suggest = document.querySelector('.topbar-searchrow__notes-suggest');
     const gateClose = document.querySelector('.gate-toprow__x');
 
-    console.log(gate);
-
     suggest.addEventListener('click', () => {
         gate.style.display = 'flex';
     });
@@ -14,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     gateClose.addEventListener('click', () => {
         gate.style.display = 'none';
 
-        const incorrectPass = document.querySelector('.gate-content__incorrect');
+        const incorrectPass = document.querySelector('.gate-form__incorrect');
 
         incorrectPass.innerHTML = '&nbsp;'
     });

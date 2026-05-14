@@ -39,7 +39,5 @@ function loadInitCards(songs) {
     });
     */
 
-    console.log(resultsList);
-
     return;
 }

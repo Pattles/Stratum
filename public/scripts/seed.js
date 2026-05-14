@@ -24,6 +24,18 @@ mongoose.connect(process.env.MONGODB_URI)
                 artist: 'PLGRMS',
                 year: 2020,
                 tags: ['indie pop', 'alt-soul', '2020s', 'english']
+            },
+            {
+                title: 'Scratch My Mind',
+                artist: 'Re:um',
+                year: 2026,
+                tags: ['r&b', 'soul', 'neo-soul', 'english', '2020s', 'chill']
+            },
+            {
+                title: 'Nighthawk - (Reprise)',
+                artist: 'Re:um',
+                year: 2025,
+                tags: ['r&b', 'soul', 'neo-soul', 'english', '2020s', 'chill']
             }
         ]);
 

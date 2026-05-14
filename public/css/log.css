@@ -1,4 +1,5 @@
-.gate {
+.gate,
+.log {
     position: fixed;
     inset: 0;
     display: flex;
@@ -7,27 +8,24 @@
     z-index: 100;
 }
 
-.blur {
-    background-color: rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-}
-
-.gate-pw {
+.gate-pw,
+.log-addsong {
     position: relative; /* so gate-toprow positions relative to this */
     background-color: #e8e3dc;
     border: 2px solid #ddd8d0;
     border-radius: 0.5rem;
-    width: 400px; /* use width instead of padding for sizing */
+    min-width: 25rem; /* use width instead of padding for sizing */
     overflow: hidden; /* keeps toprow inside the rounded corners */
 }
 
-.gate-toprow {
+.gate-toprow,
+.log-toprow {
     background-color: #b01e24;
     padding: 1rem 1.5rem;
 }
 
-.gate-toprow__lead {
+.gate-toprow__lead,
+.log-toprow__lead {
     font-family: 'Bebas Neue', sans-serif;
     color: whitesmoke;
     text-transform: uppercase;
@@ -36,7 +34,8 @@
     margin: 0;
 }
 
-.gate-toprow__x {
+.gate-toprow__x,
+.log-toprow__x {
     margin-left: auto;
     color: whitesmoke;
     font-weight: 400;
@@ -44,22 +43,34 @@
     justify-content: center; 
 }
 
-.gate-toprow__x:hover {
+.gate-toprow__x:hover,
+.log-toprow__x:hover {
     cursor: pointer;
     color: #e8e3dc;
 }
 
-.gate-content {
+.gate-form,
+.log-form {
     background-color: #e8e3dc;
     padding: 2rem 1.5rem;
     gap: 1rem;
 }
 
-.gate-content__pwd {
-    font-family: 'DM Mono', monospace; 
-    color: #9a9288;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
+.log-form__track {
+    gap: 0.7rem;
+    display: flex;
+}
+
+.log-form__entry {
+    gap: 0.25rem;
+}
+
+.gate-form__pwd {
+    font-size: 1rem;
+}
+
+.log-form__entry-lead {
+    font-size: 0.75rem;
 }
 
 .gate-creds {
@@ -69,8 +80,18 @@
 .gate-creds__input {
     height: 2rem;
     min-width: 15rem;
-    padding: 0.25rem 0.75rem;
-    align-items: center;
+}
+
+.log-form__entry-input {
+    height: 1.5rem;
+    min-width: 5rem;
+    max-width: 10rem;
+}
+
+.log-form__entry-note {
+    font-family: 'DM Mono', monospace;
+    color: #9a9288;
+    font-size: 0.75rem;
 }
 
 .gate-creds__enter {
@@ -87,17 +108,52 @@
     margin-left: auto;
 }
 
-.gate-creds__enter:hover {
-    cursor: pointer;
-    box-shadow: inset 0 0 0 2px #8f181d;
+.log-button {
+    font-family: 'DM Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    padding: 0.25rem 0.75rem;
+    font-weight: 500;
+    height: 2rem;
+    border-radius: 0.25rem;
+}
+
+.log-submit__button-cancel {
+    background: #f5f2ee;
+    border: 2px solid #f5f2ee;
+}
+
+.log-submit__button-enter {
+    color: whitesmoke;
+    background: #b01e24;
+    border: 2px solid #b01e24;
+}
+
+.log-submit__button-cancel:hover {
+    color: #b01e24;
+    border: 2px solid #b01e24;
+}
+
+.gate-creds__enter:hover,
+.log-submit__button-enter:hover {
     border: 2px solid #8f181d;
     background-color: #8f181d;
     color: #e8e3dc;
 }
 
-.gate-content__incorrect {
+.gate-form__incorrect {
     font-family: 'DM Sans', sans-serif; 
     color: #b01e24;
     letter-spacing: 0.1rem;
     font-size: 0.8rem;
+}
+
+.log-submit {
+    padding: 1rem 1.5rem;
+    border-top: 1px solid #d6cfc6;
+}
+
+.log-submit__buttons {
+    gap: 0.5rem;
+    margin-left: auto;
 }

@@ -67,10 +67,41 @@ h3, h2 {
     flex-direction: column;
 }
 
+.blur {
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.form-lead {
+    font-family: 'DM Mono', monospace; 
+    color: #9a9288;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+.form-input {
+    padding: 0.25rem 0.75rem;
+    align-items: center;   
+}
+
 input[type="text"] {
     font-family: 'DM Mono', monospace;
     background: whitesmoke;
     border: 1px solid #ccc5bb;
     border-radius: 0.25rem;
     color: #2a2420;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    box-shadow: inset 0 0 0 2px #b01e24;
+}
+
+input[type="text"]:hover {
+    box-shadow: inset 0 0 0 2px #b01e24;
+}
+
+button:hover {
+    cursor: pointer;
 }
