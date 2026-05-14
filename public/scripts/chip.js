@@ -81,7 +81,7 @@ function renderCards(fetchedSongs, activeTags) {
             </div>
         `).join('');
 
-        resultsLead.innerHTML = `${filteredSongs.length} song${filteredSongs.length === 1 ? '' : 's'} matching selected tags`;
+        resultsLead.innerHTML = `${filteredSongs.length} song${filteredSongs.length === 1 ? '' : 's'} matching ${filteredSongs.length === fetchedSongs.length ? 'all' : 'selected'} tags`;
     } else {
         resultsList.innerHTML = `
             <div class="results-card row">
