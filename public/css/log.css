@@ -157,3 +157,9 @@
     gap: 0.5rem;
     margin-left: auto;
 }
+
+.log-note { 
+    font-family: 'DM Sans', sans-serif; 
+    letter-spacing: 0.1rem;
+    font-size: 1rem;
+}
